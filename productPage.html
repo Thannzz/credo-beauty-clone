@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credo Product page</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+var product = [
+    {
+        BrandName : "Han Skincare Cosmetics",
+        ProductNmae : "HAN Clean Mascara",
+        Price :  20 ,
+        image :["https://cdn.shopify.com/s/files/1/0637/6147/products/HANCleanMascaraBlack_540x.png?v=1645062631",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/HANCleanMascaraBlack-Swatch.png?v=1645062644",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/HANCleanMascaraBlack-Lifestyle1.png?v=1645062612"]
+    },
+
+    {
+        BrandName : "Kinship",
+        ProductNmae : "Naked Apple Oil-Free Blemish Control Gel Cleanser",
+        Price :  23 ,
+        image :["https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_ProductPDP_1800px_720x.jpg?v=1644876709",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_ProductPDP_1800px.jpg?v=1644876709",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_Texture_0197_1080px_alt.jpg?v=1644881030",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_Leonna_Shot2_0539_1080px.jpg?v=1644904955"]
+    },
+
+    {
+        BrandName : "Wildling",
+        ProductNmae : "Lumin Collection",
+        Price :  139 ,
+        image :["https://cdn.shopify.com/s/files/1/0637/6147/products/Hero-LuminCollection_720x.png?v=1644630233",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Hero-CuppingSet.png?v=1644630175",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Hero-LuminMushroom.png?v=1644630210"]
+    },
+
+    {
+        BrandName : "27 Rosiers",
+        ProductNmae : "Extra/Ordinaire Skin Illuminator Full Spectrum Collection ",
+        Price :  139 ,
+        image :["https://cdn.shopify.com/s/files/1/0637/6147/products/27-Rosiers-Extra-Ordinaire-Illuminator-Kit-1-Dark_720x.png?v=1644443431",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/27-Rosiers-Extra-Ordinaire-Illuminator-Kit-2-Light.png?v=1644443328",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/27-Rosiers-Extra-Ordinaire-IlluminatorsSQ.jpg?v=1644443412"]
+    },
+
+
+]
+
+if(localStorage.getItem("ProductPage")===null)
+{
+    localStorage.setItem("ProductPage",JSON.stringify([]))
+}
+
+</script>
