@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Credo Product page</title>
     <style>
         a {
@@ -54,7 +55,6 @@
             grid-gap: 1%;
         }
         .productDiv {
-            border: 1px solid red;
             width: 250px;
             height: 400px;
         }
@@ -68,7 +68,6 @@
         }
         .BrandName{
             font-size: 11px;
-            letter-spacing: 1.1px;
             margin: 0 0 6px;
             color: #222;
             font-family: Crimson Text,serif;
@@ -80,7 +79,7 @@
             color: #000000;
             font-family: Roboto;
             line-height: normal;
-            height: auto;
+            height: 50px;
             padding: 0;
             margin: 0 0 10px;
             letter-spacing: 0;
@@ -95,7 +94,10 @@
             font-size: 14px;
             line-height: 1;
         }
-
+        i {
+            margin-top: 20px;
+            height: 100px;
+        }
         
         
     </style>
@@ -182,6 +184,13 @@ if(localStorage.getItem("ProductPage")===null)
 
 localStorage.setItem("ProductPage",JSON.stringify(productArr))
 
+if(localStorage.getItem("ProductDescrition")===null)
+{
+    localStorage.setItem("ProductDescrition",JSON.stringify([]))
+}
+
+
+
 // viewing objects in page
 productArr.map(function(elem){
     var miniDiv = document.createElement("div");
@@ -211,13 +220,30 @@ productArr.map(function(elem){
     price.innerHTML= "$"+" "+elem.Price;
     price.setAttribute("class","price")
 
+    var heart = document.createElement("i");
+    heart.setAttribute("class", "fa fa-heart fa-lg");
 
 
-    productDescription.append(Brandname,productName,price)
+
+    productDescription.append(Brandname,productName,price, heart)
     miniDiv.append(imgDiv,productDescription)
     
     document.querySelector("#container").append(miniDiv)
 
 })
+
+//Local Storage data access Function
+// function productDetails(p) {
+
+// var productPage = JSON.parse(localStorage.getItem("productDetails"));
+
+// productPage = [];
+
+// productPage.push(p);
+
+// localStorage.setItem("productDetails", JSON.stringify(productPage));
+
+// window.location.href = "adidas_productDescription.html";
+// }
 
 </script>
