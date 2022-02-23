@@ -33,16 +33,21 @@
             height: auto;
             margin-left: 10%;
             color: #676767;
+            margin-top: 25px;
+            
             
         }
         .nav a {
             padding-right: 5px;
             color: #676767;
+            
         }
         #filter
         {
-            display: flex;border: 1px solid blue;
+            /* display: flex;border: 1px solid blue; */
             margin-left: 10%;
+            margin-top: 25px;
+            display: flex;
 
         }
         #container
@@ -98,6 +103,38 @@
             margin-top: 20px;
             height: 100px;
         }
+
+        .filter{
+            color: #222;
+            border: 1px solid #979797;
+            min-width: 86px;
+            font-size: 12px;
+            min-height: auto;
+            padding: 4px 25px 4px 10px;
+            border-radius: 5px;
+            line-height: 12px;
+            letter-spacing: .5px;
+            font-weight: 400;
+            text-align: left;
+            position: relative;
+            display: block;
+            text-transform: uppercase;
+                
+        }
+        .filter
+        {
+            margin-left: 25px;
+        }
+        .totalCount{
+            margin-left: 25px;
+            font-size: 15px;
+            font-family: Roboto;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 2px;
+            
+            
+        }
         
         
     </style>
@@ -112,11 +149,42 @@
             <div> / New At Credo </div>
         </div>
         <div id="filter" >
-            <select name="Brand" id="Brand" placeholder="Brand">
-                <option value="27 ROSIERS">Brand</option>
+            <select name="brand" id="BrandFilter" class="filter" onchange="showBrand()">
+                <option value="Default">BRAND</option>
+                <option value="Han Skincare Cosmetics">HAN SKINCARE COSMETICS</option>
+                <option value="Kinship">KINSHIP</option>
+                <option value="Wildling">Wildling</option>
+                <option value="27 Rosiers">27 Rosiers</option>
             </select>
-        </div>
 
+            <select name="category" id="cat" class="filter" onchange="showCategory()">
+                <option value="Default">Category</option>
+                <option value="Eye Brushes">Eye Brushes</option>
+                <option value="Facial Oils">Facial Oils</option>
+                <option value="Foundation">Foundation</option>
+                
+            </select>
+
+            <select name="ingredients" id="ing" class="filter" onchange="showIngredients()">
+                <option value="Default">Ingredients</option>
+                <option value="Aqua">Aqua</option>
+                <option value="Acid">Acid</option>
+                <option value="Seed oils">Seed oils</option>
+                
+            </select>
+
+            <select name="price" id="price" class="filter" onchange="showPrice()">
+                <option value="Default">Price</option>
+                <option value="low">$25 & Less</option>
+                <option value="medium">$25 - $200</option>
+                <option value="high">> $200</option>
+                
+            </select>
+                <span id="totalProductsCount"></span>
+
+            
+        </div>
+        <!-- body -->
         <div id="container">
             
         </div>
@@ -128,7 +196,7 @@
 // creating data for product page
 var productArr = [
     {
-        BrandName : "Han Skincare Cosmetics",
+        brandName : "Han Skincare Cosmetics",
         ProductNmae : "HAN Clean Mascara",
         Price :  20 ,
         image :["https://cdn.shopify.com/s/files/1/0637/6147/products/HANCleanMascaraBlack_540x.png?v=1645062631",
@@ -139,11 +207,11 @@ var productArr = [
     },
 
     {
-        BrandName : "Kinship",
+        brandName : "Kinship",
         ProductNmae : "Naked Apple Oil-Free Blemish Control Gel Cleanser",
         Price :  23 ,
         image :["https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_ProductPDP_1800px_720x.jpg?v=1644876709",
-                "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_ProductPDP_1800px.jpg?v=1644876709",
+                "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_Texture_0197_1080px_alt_100x.jpg?v=1644881030",
                 "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_Texture_0197_1080px_alt.jpg?v=1644881030",
                 "https://cdn.shopify.com/s/files/1/0637/6147/products/Kinship_2021_NakedApple_Leonna_Shot2_0539_1080px.jpg?v=1644904955"],
         ingredientds : "Acid",
@@ -151,7 +219,7 @@ var productArr = [
     },
 
     {
-        BrandName : "Wildling",
+        brandName : "Wildling",
         ProductNmae : "Lumin Collection",
         Price :  139 ,
         image :["https://cdn.shopify.com/s/files/1/0637/6147/products/Hero-LuminCollection_720x.png?v=1644630233",
@@ -162,7 +230,7 @@ var productArr = [
     },
 
     {
-        BrandName : "27 Rosiers",
+        brandName : "27 Rosiers",
         ProductNmae : "Extra/Ordinaire Skin Illuminator Full Spectrum Collection ",
         Price :  139 ,
         image :["https://cdn.shopify.com/s/files/1/0637/6147/products/27-Rosiers-Extra-Ordinaire-Illuminator-Kit-1-Dark_720x.png?v=1644443431",
@@ -171,10 +239,11 @@ var productArr = [
         ingredientds : "Aqua",
         category : "Foundation"
     },
+    ]
 
-
-]
-
+var totalProductsCount = document.getElementById("totalProductsCount");
+    totalProductsCount.textContent = productArr.length +" "+ "items";
+    totalProductsCount.setAttribute("class","totalCount")
 
 // pushing data into local strorage 
 if(localStorage.getItem("ProductPage")===null)
@@ -184,17 +253,23 @@ if(localStorage.getItem("ProductPage")===null)
 
 localStorage.setItem("ProductPage",JSON.stringify(productArr))
 
-if(localStorage.getItem("ProductDescrition")===null)
+if(localStorage.getItem("ProductDescritionPage")===null)
 {
-    localStorage.setItem("ProductDescrition",JSON.stringify([]))
+    localStorage.setItem("ProductDescritionPage",JSON.stringify([]))
 }
 
 
 
 // viewing objects in page
-productArr.map(function(elem){
+function showdata(elem){
+    // console.log(elem)
+    document.querySelector("#container").innerHTML="";
+    
+    elem.map(function(elem){
+        console.log(elem);
     var miniDiv = document.createElement("div");
     miniDiv.setAttribute("class", "productDiv");
+    
 
     var imgDiv = document.createElement("div");
     imgDiv.setAttribute("class", "imageBox");
@@ -202,14 +277,26 @@ productArr.map(function(elem){
     var image = document.createElement("img");
     image.setAttribute("class", "proImage");
     
-    image.src=elem.image;
+    image.src=elem.image[0];
+
+    // function switcing next image
+    image.addEventListener("mouseenter",nextimage);
+    function nextimage(){
+        image.src=elem.image[1];
+    }
+
+    image.addEventListener("mouseleave",previmage);
+    function previmage(){
+        image.src=elem.image[0];
+    }
 
     imgDiv.append(image);
 
     var productDescription = document.createElement("div");
+    productDescription.style.cursor = "pointer";
 
     var Brandname = document.createElement("div");
-    Brandname.innerText=elem.BrandName;
+    Brandname.innerText=elem.brandName;
     Brandname.setAttribute("class","BrandName")
 
     var productName = document.createElement("div");
@@ -223,6 +310,10 @@ productArr.map(function(elem){
     var heart = document.createElement("i");
     heart.setAttribute("class", "fa fa-heart fa-lg");
 
+    miniDiv.onclick = function () {
+        ProductDescritionPage(elem)
+            }
+
 
 
     productDescription.append(Brandname,productName,price, heart)
@@ -232,18 +323,63 @@ productArr.map(function(elem){
 
 })
 
+}
+
+
+showdata(productArr)
+
 //Local Storage data access Function
-// function productDetails(p) {
+function ProductDescritionPage(p) {
 
-// var productPage = JSON.parse(localStorage.getItem("productDetails"));
+var descriptionPage = JSON.parse(localStorage.getItem("ProductDescritionPage"));
 
-// productPage = [];
+descriptionPage = [];
 
-// productPage.push(p);
+descriptionPage.push(p);
 
-// localStorage.setItem("productDetails", JSON.stringify(productPage));
+localStorage.setItem("ProductDescritionPage", JSON.stringify(descriptionPage));
 
-// window.location.href = "adidas_productDescription.html";
-// }
+window.location.href = "productDescription.html";
+}
+
+
+// brand filter function
+var brandKinship=[];
+function showBrand(){
+    var brand = document.getElementById("BrandFilter").value;
+    // console.log(brand)
+    for (var i = 0 ; i<productArr.length ; i++ )
+    {
+        if(brand=="Kinship"){
+            brandKinship = productArr.filter(function(prod){
+                return(prod.brandName=="Kinship");
+                }); 
+            }
+    }
+    showdata(brandKinship)
+}
+
+// function brand filter
+var brandKinship=[];
+function showBrand(){
+    var brand = document.getElementById("BrandFilter").value;
+    // console.log(brand)
+    for (var i = 0 ; i<productArr.length ; i++ )
+    {
+        if(brand=="Kinship"){
+            brandKinship = productArr.filter(function(prod){
+                return(prod.brandName=="Kinship");
+                }); 
+         }
+
+         if(brand=="Kinship"){
+            brandKinship = productArr.filter(function(prod){
+                return(prod.brandName=="Kinship");
+                }); 
+         }
+    }
+    showdata(brandKinship)
+}
+
 
 </script>
