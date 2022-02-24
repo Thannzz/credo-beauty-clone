@@ -1,0 +1,184 @@
+#parent{
+    height: 1200px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin:20px  auto;
+    display: flex;
+    font-family: system-ui;
+}
+.child1{
+    width: 50%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    margin:20px  auto;
+}
+.child2{
+    width: 50%;
+    height: 70%;
+    margin:50px  auto;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.icon>img{
+    height: 100px;
+    margin: 20px ; 
+}
+.icon{
+    display: flex;
+    margin: auto;
+}
+.shop>div>select{
+    background-color: rgb(233, 230, 225);
+    border: rgb(233, 230, 225);;
+} 
+.summary{
+    height: 100%;
+    width: 80%;
+    margin:  auto;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.checkout{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 7px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+button{
+    background-color: rgba(238, 185, 13, 0.884);
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    border: 0px;
+}
+button > img{
+    justify-content: center;
+}
+.maincontact{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+
+}
+.contact1{
+    font-size: 17px;
+}
+.contact2{
+    font-size: 17px;
+   margin-left: 27%;
+   text-align: center;
+}
+.Email{
+    font-weight: 15px;
+    margin-top: 20px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.Email>input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin: auto;
+}
+.address{
+    line-height: 50px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.address>div>input{
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+input{
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+} 
+ .address>div>select{
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+ .address>div>select~input{
+    width: 40%;
+    height: 30px;
+}  
+.check{
+    display: flex;
+ 
+}
+.check>input{
+    height: 40px;
+    width: 20px;
+    margin-top: -6px;
+} 
+.shop{
+    display: flex;
+}
+.shop>button{
+    background-color: rgb(33, 33, 66);
+    color: aliceblue; 
+    width: 30%;
+    margin-left: 250px;
+    font-size: 15px;
+}
+.shop>a{
+  color: rgb(65, 60, 60);
+  font-size: 18px;
+}
+#check1{
+    display: flex;
+}
+#check1>input{
+    width: 20px;
+    height: 40px;
+}
+#check1>p{
+    margin-top: -5px;
+
+}
+.rigth1>div{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.apply{
+    height: 40px;
+    width: 25%;
+    background-color: rgb(51, 1, 63);
+    color: aliceblue;
+    margin: auto;
+}
+.code{
+    width: 60%;
+    height: 50px;
+    margin: auto ;
+}
+.total{
+    display: flex;
+    margin: auto 20px;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.price{
+    text-align: right;
+    margin: auto 500px;
+}
+.earned{
+    color: teal;
+    margin-left: 450px;
+    font-size: 20px;
+}
+.final{
+    font-size: 20px;    
+    margin: auto 20px;
+    display: flex;
+}  
