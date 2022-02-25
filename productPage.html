@@ -18,7 +18,7 @@
         #headline{
             width: 80%;
             height: auto;
-            border: red 1px solid;
+            /* border: red 1px solid; */
             text-align: left;
             color: #418993;
             margin-top: 30px;
@@ -32,7 +32,7 @@
 
         .nav {
             display: flex;
-            border: 1px solid turquoise;
+            /* border: 1px solid turquoise; */
             width: 80%;
             height: auto;
             margin-left: 10%;
@@ -149,7 +149,7 @@
 
         }
         .sort{
-            border: 1px red solid;
+            /* border: 1px red solid; */
             align-self: center;
             font-size: 13px;
             height: 20px;
@@ -168,6 +168,7 @@
             width: auto;
             justify-content: end;
         }
+        
 
         /* footer css */
         #contain{
@@ -253,27 +254,29 @@
                     grid-template-columns: repeat(3,1fr);
                     grid-gap: 1%;
                 } 
-                /* #fotter{
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                height: fit-content;
-                }  */
+               
                 #contain{
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
+                width: 960px;
                 height: 750px;
-                border: red 1px solid;
+                /* border: red 1px solid; */
                 margin-top: 400px;
-                
-            }
-            .last{
-            color: aliceblue;
-            margin: auto;
-            height: auto;
-            }
-            .child{
+                }
+
+                #fotter{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 450px;
+                margin:50px
+                } 
+
+                .last{
+                display: flex;
+                flex-wrap: wrap;
+                }
+                .child{
                     display: flex;
                     flex-wrap: wrap;
                     height: auto;
@@ -282,10 +285,15 @@
                 width: auto;
                 height: auto;
                 flex-wrap: wrap;
-            }
+                }
+                #symbol{
+                display: flex;
+                flex-wrap: wrap;
             }
 
-            @media(max-width: 500px) {
+            }
+
+            @media(min-width: 476px) and (max-width: 650px) {
                 #container
                 {
                     margin: auto;
@@ -299,11 +307,10 @@
                 #contain{
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
-                height: 1750px;
-                border: red 1px solid;
+                width: 650px;
+                height: 800px;
+                /* border: red 1px solid; */
                 margin-top: 1000px;
-                
                 }
                 .last{
                 color: aliceblue;
@@ -328,6 +335,28 @@
                 display: flex;
                 flex-wrap: wrap; 
             }
+
+            }
+
+            @media(max-width: 475px) {
+                #container
+                {
+                    margin: auto;
+                    margin-top: 50px;
+                    width: 80%;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-gap: 1%;
+                }  
+                #contain{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 300px;
+                    height: 2200px;
+                    /* border: red 1px solid; */
+                    margin-top: 4000px;
+                }
+
             }
             
         
@@ -907,14 +936,16 @@ function showdata(elem){
 
     var heart = document.createElement("i");
     heart.setAttribute("class", "fa fa-heart fa-lg");
-
+   
+    
+    
     miniDiv.onclick = function () {
         ProductDescritionPage(elem)
             }
 
 
 
-    productDescription.append(Brandname,productName,price, heart)
+    productDescription.append(Brandname,productName,price, heart )
     miniDiv.append(imgDiv,productDescription)
     
     document.querySelector("#container").append(miniDiv)
@@ -934,6 +965,8 @@ var descriptionPage = JSON.parse(localStorage.getItem("ProductDescritionPage"));
 descriptionPage = [];
 
 descriptionPage.push(p);
+
+var qunat = 1 ;
 
 localStorage.setItem("ProductDescritionPage", JSON.stringify(descriptionPage));
 
