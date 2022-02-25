@@ -1,6 +1,6 @@
 #parent{
     height: 1200px;
-    width: 90%;
+    width: 100%;
     background-color: rgb(255, 255, 255);
     margin:20px  auto;
     display: flex;
@@ -149,11 +149,12 @@ input{
    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 .apply{
-    height: 40px;
-    width: 25%;
+    height: 50px;
+    width: 15%;
     background-color: rgb(51, 1, 63);
     color: aliceblue;
     margin: auto;
+    border-radius: 7px;
 }
 .code{
     width: 60%;
