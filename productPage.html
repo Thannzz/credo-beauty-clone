@@ -15,6 +15,58 @@
             text-decoration: none;
             color: black;
         }
+        /* navbar */
+        #navcontainer{
+            width: 100%;
+            height: 50px;
+            border: 1px solid blue;
+            background-color: teal;
+            text-align: center;
+            font-family: system-ui;
+        }
+        #navcontainer>h3{
+            color: white;
+            margin-top: -10px;
+        }
+     #container_2{
+            display: flex;            
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+        }
+        #container_2>div{
+           
+            width: 33%;
+            height: 120px;
+            
+        }
+        #innerbox{
+            display: flex;
+            justify-content: space-around;
+            font-style: normal;   
+        }
+        h3{
+            padding-top: 20px;
+        }
+        #lower{
+            
+            display: flex;
+            justify-content: space-around;
+            font-weight: 100px;
+        }
+       
+        #image{
+            text-align: center;
+            padding-top: 20px;
+        }
+        #right{
+            margin-top: 40px;
+            display: flex;
+            justify-content: end;
+        }
+        #right>div{
+            margin-left: 10px;
+        }
         #headline{
             width: 80%;
             height: auto;
@@ -289,7 +341,15 @@
                 #symbol{
                 display: flex;
                 flex-wrap: wrap;
-            }
+                }
+
+                #lower{
+            
+                display: flex;
+                justify-content: space-around;
+                font-weight: 100px;
+                flex-wrap: wrap;
+                }   
 
             }
 
@@ -336,6 +396,14 @@
                 flex-wrap: wrap; 
             }
 
+            #lower{
+            
+            display: flex;
+            justify-content: space-around;
+            font-weight: 100px;
+            flex-wrap: wrap;
+            }   
+
             }
 
             @media(max-width: 475px) {
@@ -364,6 +432,50 @@
     </style>
 </head>
 <body>
+    <!-- header -->
+    <div id="navcontainer">
+        <h3>Free shipping over  $50 Refer a friend </h3>
+        
+    </div>
+    <div id="container_2">
+        <div id="innerbox">
+            <div>
+                <h3>Stores & Services</h3>
+            </div>
+            <div>
+                <h3>Rewards</h3>
+            </div>
+            <div>
+                <h3>Chat Live</h3>
+            </div>
+        </div>
+        <div id="image">
+            <img src="credo.jpeg" alt="credo">
+        </div>
+        <div id="right">
+            <div><i class="fa-solid fa-magnifying-glass"></i> <input type="text" style="width:230px; height: auto; "></div>
+            <div></i><a href="login.html"><i class="fa-solid fa-user-plus"></i></a></div>
+            <div><i class="fa-solid fa-heart"></i></div>
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+            <div>0</div>
+        </div>
+    </div>
+    <hr>
+    <div id="lower">
+        <div><h3>Bestsellers</h3></div>
+        <div><h3>New</h3></div>
+        <div><h3>Brands</h3></div>
+        <div><h3>Skincare</h3></div>
+        <div><h3>Makeup</h3></div>
+        <div><h3>Hair</h3></div>
+        <div><h3>Bath & Body</h3></div>
+        <div><h3>Fragrance</h3></div>
+        <div><h3>Gifts</h3></div>
+        <div><h3>SALE</h3></div>
+        <div><h3>Featured</h3></div>
+        <div><h3>Why Clean ?</h3></div>
+    </div>
+    <hr>
     <!-- parent div -->
     
         <div id="headline">New At Credo</div>
@@ -1226,4 +1338,8 @@ function sort(){
         showdata(productArr);
     }
 }
+
+
+
+
 </script>
