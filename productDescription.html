@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageBox{
+            border: 1px red solid;
+            width: auto;
+            margin-left: 10%;
+            
+        }
+        .showimg
+        {
+            border: 1px blue solid;
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .allimg
+        {
+            height: 100px;
+            width: 100px;
+        }
+        .proImage{
+            height: 400px;
+            width: 400px; 
+        }
+        .description{
+            border: 1px solid cornflowerblue;
+            display: flex;
+            
+        }
+        .rightBox{
+            border: 1px solid crimson;
+            width: 60%;
+            height: auto;
+            justify-content:end;
+            margin-left: 75px;
+        }
+        .BrandName{
+            border: 1px purple solid;
+            height: auto    ;
+            width: auto;
+            color: #231f20;
+            font-family: Crimson-Roman,sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            margin-bottom: 10px;
+        }
+        .proName{
+            border: 1px chartreuse solid;
+            height: auto ;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #222;
+            font-family:Crimson-Roman,sans-serif ;
+            margin-bottom: 20px;
+        }
+        .price{
+            border: brown 1px solid ;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.1px;
+            font-family: Roboto,sans-serif;
+
+        }
+        .para{
+            display: flex;
+            height: 20px;
+            margin-top: 30px;
+        }
+        .info{
+            margin-left: 20px;
+            margin-top: -1px;
+            font-size: 15px;
+            font-family: Roboto,sans-serif;
+            box-sizing: border-box;
+            letter-spacing: 1.1px;
+        }
+        .btnRow{
+            display: flex;
+            margin-top: 25px;
+        }
+        .addbtn{
+            padding: 10px;
+            margin-top: 25px;
+            background: #BE6273;
+            border: none;
+            font-family: Crimson-Roman,sans-serif;
+
+        }
+        .static2{
+            color: #222;
+            font-family:Crimson-Roman,sans-serif ;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .static3{
+            color: #222;
+            font-family:Crimson-Roman,sans-serif ;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #container{
+            width: 80%;
+            margin: auto;
+        }
+        .product{
+        padding: 14px 10px 14px 0;
+        font-family:Crimson-Roman,sans-serif ;
+        letter-spacing: 2.4px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        border-bottom: none;
+        border-top: 1px solid #dadada;
+        
+        height: auto;
+        width: 100%;
+        text-align: left;
+        background: none;
+        
+        }
+        .proName1{
+            margin: 0 0 15px;
+        font-size: 22px;
+        font-family: Crimson Text;;
+        font-weight: 600;
+        text-transform: none;
+        color: #be6273;
+        letter-spacing: 0;
+        }
+        .good{
+            font-weight: 700;
+            font-size: 14px;
+            font-family:Crimson-Roman,sans-serif ;
+
+        }
+        .goodDes{
+            font-size: 14px;
+            font-family:Crimson-Roman,sans-serif ;
+            margin-top: -10px;
+
+        }
+        .type{
+            font-weight: 700;
+            font-size: 14px;
+            font-family:Crimson-Roman,sans-serif ;
+
+        }
+        .typeDes{
+            font-size: 14px;
+            font-family:Crimson-Roman,sans-serif ;
+            margin-top: -10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+    <div>
+        hi
+    </div>
+
+    <!-- Footer -->
+    
+    
+</body>
+</html>
+
+<script>
+
+var productArr = JSON.parse(localStorage.getItem("ProductDescritionPage"))
+
+if(localStorage.getItem("cartPage")===null)
+{
+    localStorage.setItem("cartPage",JSON.stringify([]))
+}
+
+    // viewing objects in page
+function showdata(elem){
+    
+    productArr.map(function(elem){
+
+    var miniDiv=document.createElement("div");
+    miniDiv.setAttribute("class","description")
+    
+    var leftBox = document.createElement("div")
+
+    var imgDiv = document.createElement("div");
+    imgDiv.setAttribute("class", "imageBox");
+
+    var image = document.createElement("img");
+    image.setAttribute("class", "proImage");
+    image.src=elem.image[0];
+
+    var shwoimg = document.createElement("div")
+    shwoimg.setAttribute("class","showimg")
+
+    
+    var showimg1 = document.createElement("img");
+    showimg1.src=elem.image[0];
+    showimg1.addEventListener("click",changeimage1);
+    function changeimage1(){
+        currentImage1(elem,image);
+    }
+    
+
+    
+
+    var showimg2 = document.createElement("img");
+    showimg2.src=elem.image[1];
+    showimg2.addEventListener("click",changeimage);
+    function changeimage(){
+        currentImage(elem,image);
+    }
+    
+
+    var showimg3 = document.createElement("img");
+    showimg3.src=elem.image[2];
+    showimg3.addEventListener("click",changeimage2);
+    function changeimage2(){
+        currentImage2(elem,image);
+    }
+
+
+    shwoimg.append(showimg1,showimg2,showimg3)
+    imgDiv.append(image,shwoimg);
+
+    var rightBox = document.createElement("div");
+    rightBox.setAttribute("class","rightBox")
+
+
+    var Brandname = document.createElement("div");
+    Brandname.innerText=elem.brandName;
+    Brandname.setAttribute("class","BrandName")
+    rightBox.append(Brandname)
+
+    var productName = document.createElement("div");
+    productName.innerHTML=elem.ProductNmae;
+    productName.setAttribute("class","proName")
+
+    var line = document.createElement("hr")
+
+
+    var price = document.createElement("div");
+    price.innerHTML= "$"+" "+elem.Price;
+    price.setAttribute("class","price")
+
+    var static1 = document.createElement("div")
+    static1.setAttribute("class","para")
+    var afterPayImage = document.createElement("img");
+    afterPayImage.src = "https://static.afterpay.com/integration/product-page/logo-afterpay-colour.png"
+    var text = document.createElement("p")
+    text.innerHTML="avaliable for orders b/w $35 -$1000";
+    text.setAttribute("class","info")
+
+    static1.append(afterPayImage,text)
+
+    // var btnRow = document.createElement("div");
+    // btnRow.setAttribute("class","btnRow")
+    // var minusBtn =document.createElement("button")
+    // minusBtn.innerHTML="-";
+    // minusBtn.setAttribute("class","minusBtn")
+    // var num = document.createElement("div");
+    // num.innerHTML="1"
+    // num.setAttribute("class","num")
+    // var plusBtn =document.createElement("button")
+    // minusBtn.innerHTML="+";
+    var addbtn = document.createElement("button");
+    addbtn.innerText="ADD OT CART"
+    addbtn.setAttribute("class","addbtn")
+
+    addbtn.onclick = function () {
+        cartPage(elem)
+            }
+
+    var static2 = document.createElement("p");
+    static2.innerHTML="Free Shipping on orders over $50+30 days return"
+    static2.setAttribute("class","static2")
+
+    var static3 = document.createElement("p");
+    static3.innerHTML="Earn 32 points in Credo Rewards";
+    static3.setAttribute("class","static3")
+    
+
+    var product = document.createElement("div")
+    product.innerHTML="PRODUCT DETAILS"
+    product.setAttribute("class","product")
+
+    var productName1 = document.createElement("div");
+    productName1.innerHTML=elem.ProductNmae;
+    productName1.setAttribute("class","proName1")
+
+    var good = document.createElement("h3")
+    good.innerHTML="This Product is -"
+    good.setAttribute("class","good")
+
+    var goodDes = document.createElement("p")
+    goodDes.innerHTML="a black mascara in a vegan formula that lengthens lashes with conditioning ingredients."
+    goodDes.setAttribute("class","goodDes")
+
+    var type = document.createElement("h3")
+    type.innerHTML="Good for -"
+    type.setAttribute("class","type")
+
+    var typeDes = document.createElement("p");
+    typeDes.innerHTML="All types of Skin."
+    typeDes.setAttribute("class","typeDes")
+
+    // btnRow.append(minusBtn,num,plusBtn,addbtn)
+
+    rightBox.append(Brandname,productName,line,price,static1,addbtn,static2,static3,product,productName1,good,goodDes,type,typeDes)
+    
+
+    
+
+
+
+    // productDescription.append(Brandname,productName,price)
+    leftBox.append(imgDiv)
+    miniDiv.append(leftBox,rightBox)
+    document.querySelector("#container").append(miniDiv)
+
+    
+
+})
+
+}
+
+//changinh image function
+function currentImage(elem,image){
+    image.src=elem.image[1];
+}
+
+function currentImage2(elem,image){
+    image.src=elem.image[2];
+}
+
+function currentImage1(elem,image){
+    image.src=elem.image[0];
+}
+
+// adding products to local storage 
+function cartPage(e){
+var cartPage = JSON.parse(localStorage.getItem("cartPage"));
+
+cartPage = [];
+
+cartPage.push(e);
+
+localStorage.setItem("cartPage", JSON.stringify(cartPage));
+
+// window.location.href = "addToCart.html";
+
+}
+
+
+showdata()
+</script>
