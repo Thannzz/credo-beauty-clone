@@ -1,0 +1,228 @@
+#parent{
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin:20px  auto;
+    display: flex;
+    font-family: system-ui;
+}
+#child1{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    margin:20px  auto;
+}
+.summary{
+    width: 90%;
+    margin:  auto;
+   
+    background-color: rgb(236, 236, 236);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.icon>img{
+    height: 70px;
+    margin: 20px ; 
+}
+.icon{
+    display: flex;
+    margin: auto;
+}
+.site{
+    display: flex;
+    height: 50px;
+    width: 400px;
+   
+}
+.site>a{
+    font-size: 15px;
+    margin: auto;
+    color: rgb(54, 50, 50);
+    font-size: 20px;
+    text-decoration: none;
+}
+.info{
+   
+    height: 200px;
+    width: 90%;  
+    margin: auto;
+
+}
+.info>div{
+    display: flex;
+}
+.info>div>p{
+    font-size: 17px;
+    color: rgb(82, 81, 81);
+}
+.info>div>input{
+    height: 30px;
+    width: 400px;
+    border-radius: 6px;
+    margin: auto;
+}
+.pay>h2{
+    color: rgb(82, 81, 81); 
+}
+.pay>p{
+    font-size: 17px;
+    line-height: 3px;
+}
+.creditCard{
+    display: flex;
+    font-size: 18px;
+    margin-top: 25px;
+   
+}
+.creditCard>input{
+  height: 18px;
+  width: 20px;
+  margin-top:5px ;
+}
+#symbol{
+    display: flex;
+    margin-left: 250px;
+}
+#symbol>img{
+    height: 30px;
+    margin:4px;  
+    border-radius: 3px;  
+}
+.details{
+    margin: auto;
+    height: 200px;
+    width: 90%;
+}
+.details>input{
+  height: 30px;
+  width: 80%;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+.details>div
+{
+ display: flex;
+}
+.details>div>input{
+    height: 30px;
+    width: 48%;
+    margin: auto;
+    border-radius: 6px; 
+}
+.paypal{
+    margin-top: -30px;
+   
+}
+.paypal>input{
+    height: 18px;
+    width: 20px;   
+}
+.paypal>img{
+    height: 25px; 
+}
+.afterpay{
+    display: flex;
+   
+}
+.afterpay>div>input{
+    height: 18px;
+    width: 20px;   
+}
+.afterpay>div>p{
+    margin-top: 1px;
+}
+.billing>h2{
+    color: rgb(82, 81, 81); 
+}
+.billing>p{
+    font-size: 17px;
+    line-height: 3px;
+}
+.shiping{
+    display: flex;
+   
+}
+.shiping>div>input{
+    height: 18px;
+    width: 20px;   
+}
+.shiping>div>p{
+    margin-top: 1px;
+}
+.billings{
+    display: flex;
+   
+}
+.billings>div>input{
+    height: 18px;
+    width: 20px;   
+}
+.billings>div>p{
+    margin-top: 1px;
+}
+.shop{
+    display: flex;
+}
+.shop>button{
+    background-color: rgb(33, 33, 66);
+    color: aliceblue; 
+    width: 20%;
+    height: 50px;
+    margin-left: 250px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+.shop>a{
+  color: rgb(65, 60, 60);
+  font-size: 18px;
+  text-decoration: none;
+}
+#child2{
+    width: 50%;
+    height: 70%;
+    margin:50px  auto;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; 
+}
+.rigth1>div{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.apply{
+    height: 50px;
+    width: 15%;
+    background-color: rgb(51, 1, 63);
+    color: aliceblue;
+    margin: auto;
+    border-radius: 7px;
+}
+.code{
+    width: 60%;
+    height: 50px;
+    margin: auto ;
+}
+.total{
+    display: flex;
+    margin: auto 20px;
+    font-size: 18px;
+    margin: auto;
+    padding: auto;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.price{
+    text-align: right;
+    margin: auto 500px;
+}
+.earned{
+    color: teal;
+    margin-left: 450px;
+    font-size: 20px;
+}
+.final{
+    font-size: 20px;    
+    margin: auto 20px;
+    display: flex;
+}  
+
+
