@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProductDiscription | credo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>shop | credo</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./fotter.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
+
     <style>
-    /* navbar */
-    #navcontainer{
+         #navcontainer{
             width: 100%;
             height: 50px;
-            /* border: 1px solid blue; */
+            border: 1px solid blue;
             background-color: teal;
             text-align: center;
             font-family: system-ui;
@@ -55,378 +60,214 @@
             text-align: center;
             padding-top: 20px;
         }
-        #right{
+        #right1{
             margin-top: 40px;
             display: flex;
             justify-content: end;
         }
-        #right>div{
+        #right1>div{
             margin-left: 10px;
         }
-        .imageBox{
-            /* border: 1px red solid; */
-            width: auto;
-            margin-left: 10%;
-            
-        }
-        .showimg
-        {
-            /* border: 1px blue solid; */
-            height: 100px;
-            display: flex;
-            justify-content: space-evenly;
+     .a{
+         font-size: 30px;
+         margin-left: 10%;
+     }
+     .b{
+         font-size: 20px;
+     }
+     #top{
+         width:50%;
+         height:40px;
+         margin-left: 10%;
+         margin-top: 20px;
+         justify-content: space-between;
+         display: flex;
+     }
+     
+     #top>div{
+         font-size: 20px;
+     }
+     #rewards{
+         width:50%;
+         border: 1px solid rgb(229, 226, 226);
+         height: 170px;
+         margin-left: 10%;
+         padding: 1%;
+         margin-top: -0.5%;
+     }
+     .c{
+         margin-top: -20px;
+         font-size: 20px;
+     }
+     #benefits{
+         display:flex;
+         
+     }
+     #benefits>div{
+         
+         height:90px;
+         width:60%;
+     }
+     
+     #parent{
+         display:flex;
+         justify-content: space-between;
+         
+     }
 
-        }
-        .allimg
-        {
-            height: 100px;
-            width: 100px;
-        }
-        .proImage{
-            height: 400px;
-            width: 400px; 
-        }
-        .description{
-            /* border: 1px solid cornflowerblue; */
-            display: flex;
-            
-        }
-        .rightBox{
-            /* border: 1px solid crimson; */
-            width: 60%;
-            height: auto;
-            justify-content:end;
-            margin-left: 75px;
-        }
-        .BrandName{
-            /* border: 1px purple solid; */
-            height: auto    ;
-            width: auto;
-            color: #231f20;
-            font-family: Crimson-Roman,sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 1.4px;
-            margin-bottom: 10px;
-        }
-        .proName{
-            /* border: 1px chartreuse solid; */
-            height: auto ;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: normal;
-            color: #222;
-            font-family:Crimson-Roman,sans-serif ;
-            margin-bottom: 20px;
-        }
-        .price{
-            /* border: brown 1px solid ; */
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 1.1px;
-            font-family: Roboto,sans-serif;
-
-        }
-        .para{
-            display: flex;
-            height: 20px;
-            margin-top: 30px;
-        }
-        .info{
-            margin-left: 20px;
-            margin-top: -1px;
-            font-size: 15px;
-            font-family: Roboto,sans-serif;
-            box-sizing: border-box;
-            letter-spacing: 1.1px;
-        }
-        .btnRow{
-            display: flex;
-            margin-top: 25px;
-        }
-        .addbtn{
-            padding: 10px;
-            margin-top: 25px;
-            background: #BE6273;
-            border: none;
-            font-family: Crimson-Roman,sans-serif;
-
-        }
-        .static2{
-            color: #222;
-            font-family:Crimson-Roman,sans-serif ;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .static3{
-            color: #222;
-            font-family:Crimson-Roman,sans-serif ;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        #container{
-            width: 80%;
-            margin: auto;
-        }
-        .product{
-        padding: 14px 10px 14px 0;
-        font-family:Crimson-Roman,sans-serif ;
-        letter-spacing: 2.4px;
-        color: rgb(0, 0, 0);
-        font-size: 16px;
-        border-bottom: none;
-        border-top: 1px solid #dadada;
+     .d>img{
+         height: 100%;
+         width: 70%;
+     }
+     .e{
+         margin-top: 20px;
+         color:black;
+     }
+     #right{
+         border:1px solid rgb(229, 226, 226);
+         height:700px;
+         width:340px;
+         margin-left: 50px;
+        top: -20%;
+         margin-right: 10%;
+    }
+    
+     #estimate{
+         
+         width:100%;
+         height:auto;
+     }
+     .f{
+         display:flex;
+         justify-content: space-between;
+         width:100%;
+         height:auto;
+         
+         font-size: 18px;
+     }
+     #total{
         
-        height: auto;
-        width: 100%;
-        text-align: left;
-        background: none;
+         width:100%;
+         height:auto;
+     }
+     .g{
+         width:100%;
+         height:50px;
+         display:flex;
+         justify-content: space-between;
+         
+
+     }
+     .g>div{
+         font-size: 25px;
+         
+     }
+     .h{
+         margin:-1px
+     }
+     #info{
+        width:100%;
+         height:30px;
+         display:flex;
+         
+         
+
+     }
+     .margin{
+         margin-top: -1px;;
+         margin-left: 40%;
+         font-style: italic;
+     }
+     .gift{
+         margin-top: -1px;
+         text-align: center;
+         font-size: 20px;
+     }
+     #button1{
+         
+         margin-left: 10%;
+         margin-top: 4%;
+         width:80%;
+         height:40px;
+        color: white;
+         background-color: #be6274;
+         text-decoration: none;
+         
+     }
+     #button2{
+         
+         margin-left: 10%;
+         margin-top: 4%;
+         width:80%;
+         height:40px;
+         
+         
+     }
+     #paypal{
+        height:30px;
+        width:30%;
+        justify-content: center;
+     }
+     .shipping{
+         text-align: center;
+         font-size: 20px;
+     }
+     .bag{
+         margin-left: 10%;
+         font-size: 25px;
+         margin-top: 5%;
+     }
+     #itembag{
+        width:70%;
+         border: 1px solid rgb(229, 226, 226);
+         height: auto;
+         margin-left: 10%;
+         margin-bottom: auto;
+         display:block;
+         
+     }
+     .first{
+         
+         height: 220px;
+         width:250px;
+         margin-left: 1%;
+         margin-top: 1%;
+     }
+     .second{
         
-        }
-        .proName1{
-            margin: 0 0 15px;
-        font-size: 22px;
-        font-family: Crimson Text;;
-        font-weight: 600;
-        text-transform: none;
-        color: #be6273;
-        letter-spacing: 0;
-        }
-        .good{
-            font-weight: 700;
-            font-size: 14px;
-            font-family:Crimson-Roman,sans-serif ;
-
-        }
-        .goodDes{
-            font-size: 14px;
-            font-family:Crimson-Roman,sans-serif ;
-            margin-top: -10px;
-
-        }
-        .type{
-            font-weight: 700;
-            font-size: 14px;
-            font-family:Crimson-Roman,sans-serif ;
-
-        }
-        .typeDes{
-            font-size: 14px;
-            font-family:Crimson-Roman,sans-serif ;
-            margin-top: -10px;
-
-        }
-
-        /* footer css */
-        #contain{
-                background-color: #17191b;
-                width: 100%;
-                font-family: system-ui;
-                font-size: 14px;
-                height: auto;
-                margin: 100px auto;
-                margin-top: 200px;
-            }
-
-            #fotter{
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                height: 450px;
-                margin:auto;
-                } 
-                #left{
-                    padding: 20px;
-                    color: aliceblue;
-                    line-height: 50px;
-                    width: 40%;
-                    
-                }
-                input{
-                    background-color: #232e38;
-                    width: 100%;
-                }
-                #parent{
-                    color:aliceblue; 
-                    width: 50%;
-                    height: 500px;
-                    line-height: 20px;  
-                }
-            .child{
-                    display: flex;
-                }
-                .media{
-                font-size: 25px;
-                color:rgb(219, 214, 214);
-                margin-top: 10px;
-            }
-            .line{
-                display: flex;
-                width: 100%;
-            }
-            .icon>img{
-                height: 80px;
-                margin: 20px ;     
-            }
-            .box{
-                width: 20%;
-                height: 70%;
-                margin-left: auto;
-            }
-            .last{
-            color: aliceblue;
-            margin: 10px 40px;
-            height: 200px;
-            }
-            #symbol{
-                display: flex;
-            }
-            #symbol>img{
-                height: 30px;
-                margin:7px;  
-                border-radius: 3px;  
-            }
-            .box>p>a{
-                color: aliceblue;  
-            }
-
-
-            @media(max-width: 960px) {
-                #container
-                {
-                    margin: auto;
-                    margin-top: 50px;
-                    width: 80%;
-                    display: grid;
-                    grid-template-columns: repeat(3,1fr);
-                    grid-gap: 1%;
-                } 
-               
-                #contain{
-                display: flex;
-                flex-wrap: wrap;
-                width: 960px;
-                height: 750px;
-                /* border: red 1px solid; */
-                margin-top: 400px;
-                }
-
-                #fotter{
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                height: 450px;
-                margin:50px
-                } 
-
-                .last{
-                display: flex;
-                flex-wrap: wrap;
-                }
-                .child{
-                    display: flex;
-                    flex-wrap: wrap;
-                    height: auto;
-                }
-                .box{
-                width: auto;
-                height: auto;
-                flex-wrap: wrap;
-                }
-                #symbol{
-                display: flex;
-                flex-wrap: wrap;
-                }
-
-                #lower{
-            
-                display: flex;
-                justify-content: space-around;
-                font-weight: 100px;
-                flex-wrap: wrap;
-                }  
-
-            }
-
-            @media(min-width: 476px) and (max-width: 650px) {
-                #container
-                {
-                    margin: auto;
-                    margin-top: 50px;
-                    width: 80%;
-                    display: grid;
-                    grid-template-columns: repeat(2,1fr);
-                    grid-gap: 1%;
-                } 
-
-                #contain{
-                display: flex;
-                flex-wrap: wrap;
-                width: 650px;
-                height: 800px;
-                /* border: red 1px solid; */
-                margin-top: 1000px;
-                }
-                .last{
-                color: aliceblue;
-                display: flex;
-                flex-wrap: wrap;    
-                justify-content:left;
-                }
-                .child{
-                display: flex;
-                flex-wrap: wrap;
-                height: auto;
-                }
-                .box{
-                width: auto;
-                height: auto;
-                flex-wrap: wrap;
-            }
-            #symbol>img{
-                height: 30px;
-                margin:7px;  
-                border-radius: 3px; 
-                display: flex;
-                flex-wrap: wrap; 
-            }
-
-            #lower{
-            
-            display: flex;
-            justify-content: space-around;
-            font-weight: 100px;
-            flex-wrap: wrap;
-            }  
-
-            }
-
-            @media(max-width: 475px) {
-                #container
-                {
-                    margin: auto;
-                    margin-top: 50px;
-                    width: 80%;
-                    display: grid;
-                    grid-template-columns: repeat(1,1fr);
-                    grid-gap: 1%;
-                }  
-                #contain{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 300px;
-                    height: 2200px;
-                    /* border: red 1px solid; */
-                    margin-top: 4000px;
-                }
-            }
-
+         height: 220px;
+         width:800px;
+         margin-left: 10%;
+         margin-top: 1%;
+     }
+     #inside{
+      display: flex;
+      justify-content: space-between;
+     }
+     #inside>div{
+         font-size: 20px;
+         
+     }
+     .total-Cart{
+         display:flex;
+     }
+     .size{
+         font-size: 20px;
+     }
+     .remove{
+         margin-left: 70%;
+     }
+     .giftmsg{
+         background-color: white;
+         border: 1px solid rgb(177, 170, 170);
+         height:30px ;
+         width:335px;
+         display: none;
+     }
+    
     </style>
 </head>
 <body>
-    <!-- navbar -->
     <div id="navcontainer">
         <h3>Free shipping over  $50 Refer a friend </h3>
         
@@ -446,12 +287,12 @@
         <div id="image">
             <img src="credo.jpeg" alt="credo">
         </div>
-        <div id="right">
+        <div id="right1">
             <div><i class="fa-solid fa-magnifying-glass"></i> <input type="text" style="width:230px; height: auto; "></div>
             <div></i><a href="login.html"><i class="fa-solid fa-user-plus"></i></a></div>
             <div><i class="fa-solid fa-heart"></i></div>
             <div><i class="fa-solid fa-bag-shopping"></i></div>
-            <div>0</div>
+            <div class="total-count">0</div>
         </div>
     </div>
     <hr>
@@ -470,13 +311,117 @@
         <div><h3>Why Clean ?</h3></div>
     </div>
     <hr>
-    <div id="container">
-        
+    <div class="a">Shopping Bag</div>
+    <div id="top">
+        <div><a href="checkoutpage.html">Continue to Checkout</a> </div>
+        <div><a href="productPage.html">Continue Shopping</a></div>
+    </div>    
+    <hr>    
+    <div id="rewards">
+        <h1>Credo Rewards</h1>
+        <p class="c">To earn and redeem Credo Rewards points,<a href="login.html">sign in</a>  or <a href="signup.html">create account</a> .</p>
+        <div id="benefits">
+            <div id="parent">
+                <div class="d">
+                    <img src="https://target.scene7.com/is/image/Target/GUEST_69c85b38-b95f-4a77-90f4-3581f7a6a707?wid=325&hei=325&qlt=80&fmt=webp" alt="">
+                </div>
+                <div class="e">Earn up to 2 points per dollar spent</div>
+            </div>
+            <div id="parent">
+                <div class="d">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXLj7zToNpa1HGFv5qFk3S-3tDQXiJLOUm2NTJZpSXZHYfxYb" alt="">
+                </div>
+                <div class="e">Get free points on your birthday</div>
+            </div>
+            <div id="parent">
+                <div class="d">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl2NeF-7icXKpPqfTBwD7l8vgWK1CqgZUmz8dRmFDQwSHYj019" alt="">
+                </div>
+                <div class="e">Get access to special events</div>
+            </div>
+            <div id="parent">
+                <div class="d">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRh_FuhF8kNf_32bi170gxobb_8PiS0MJsjannUNWkmN7VXgSg" alt="">
+                </div>
+                <div class="e">Qualify for free shipping</div>
+            </div>
+        </div>
+       
     </div>
-    
+    <div class="bag-count">
 
-    <!-- footer -->
-    <div id ="contain">
+    </div>
+       
+    <div class="total-Cart">
+        <div class="total-cart-left">
+            <div id="itembag">
+                        
+          
+            </div>
+        </div>
+        <div class="total-cart-right">
+            <div id="right">
+                <h2>Order Summary</h2>
+                <hr>
+                <div id="estimate">
+                    <div class="f">
+                        <div>Merchandise subtotal</div>
+                        <div class="total-price">$ 120.00</div>
+                    </div>
+                    <div class="f">
+                        <div>Shipping & Handling</div>
+                        <div>TBD</div>
+                    </div>
+                    <div class="f">
+                        <div>Tax</div>
+                        <div>TBD</div>
+                    </div>
+                </div>
+                <hr>
+                <div id="total">
+                    <div class="g">
+                        <div>Estimated Total</div>
+                        <div class="total-price2">$ 120.00</div>
+                    </div>
+                    <p class="h">or 4 interest-free installments of $30.00 by</p>
+                    <div id="info">
+                        <div>
+                            <img src="https://static.afterpay.com/integration/product-page/logo-afterpay-colour.png" alt="" id="photo">
+                        </div>
+                        <div>Info</div>
+                    </div>
+                    <div class="msg">
+                        <p class="margin">(Before Shipping & Taxes)</p>
+                    <p class="gift" onClick="showmsg(event)"> <a href="">Add a gift message</a> </p>
+                    <input type="text" class="giftmsg">
+                    </div>
+                    
+                </div>
+                <br>
+                
+        
+                
+        
+                <button id="button1" onclick="location.href='checkoutpage.html'"> CONTINUE TO CHECKOUT</button>
+                <button id="button2" onclick="location.href='payment.html'">
+                    <img src="https://cdn.shopify.com/s/files/1/0637/6147/files/paypal.png?66731" alt=""  id="paypal">
+                </button>
+                <p class="shipping">You have earned FREE shipping!</p>
+            </div>
+
+        </div>
+        
+        
+        
+
+    </div>
+   
+    
+    
+   
+    <br>
+    <br>
+    <div id ="container">
         <div id ="fotter">
             <div id = "left">
                 <div class ="line">
@@ -551,201 +496,93 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> 
     
-    
+    </div>    
+   
+   
 </body>
 </html>
-
 <script>
-
-var productArr = JSON.parse(localStorage.getItem("ProductDescritionPage"))
-
-if(localStorage.getItem("cartPage")===null)
-{
-    localStorage.setItem("cartPage",JSON.stringify([]))
-}
-
-    // viewing objects in page
-function showdata(elem){
-    
-    productArr.map(function(elem){
-
-    var miniDiv=document.createElement("div");
-    miniDiv.setAttribute("class","description")
-    
-    var leftBox = document.createElement("div")
-
-    var imgDiv = document.createElement("div");
-    imgDiv.setAttribute("class", "imageBox");
-
-    var image = document.createElement("img");
-    image.setAttribute("class", "proImage");
-    image.src=elem.image[0];
-
-    var shwoimg = document.createElement("div")
-    shwoimg.setAttribute("class","showimg")
-
-    
-    var showimg1 = document.createElement("img");
-    showimg1.src=elem.image[0];
-    showimg1.addEventListener("click",changeimage1);
-    function changeimage1(){
-        currentImage1(elem,image);
-    }
-    
-
-    
-
-    var showimg2 = document.createElement("img");
-    showimg2.src=elem.image[1];
-    showimg2.addEventListener("click",changeimage);
-    function changeimage(){
-        currentImage(elem,image);
-    }
-    
-
-    var showimg3 = document.createElement("img");
-    showimg3.src=elem.image[2];
-    showimg3.addEventListener("click",changeimage2);
-    function changeimage2(){
-        currentImage2(elem,image);
+    function showmsg(event){
+        event.preventDefault();
+        var gift=document.querySelector(".giftmsg");
+        gift.style.display="block";
     }
 
+    var cartPage = JSON.parse(localStorage.getItem("cartPage"));
+    console.log(cartPage)
 
-    shwoimg.append(showimg1,showimg2,showimg3)
-    imgDiv.append(image,shwoimg);
+    showDataInCart(cartPage);
+    var quant1=cartPage.reduce(function(acc,elem){
+        return acc+elem.quant;
+    },0)
 
-    var rightBox = document.createElement("div");
-    rightBox.setAttribute("class","rightBox")
+    var bagValue=document.querySelector("h1");
+    bagValue.setAttribute("class","bag");
+    bagValue.innerText="ITEMS IN BAG("+(quant1)+")";
 
+    document.querySelector(".bag-count").append(bagValue);
 
-    var Brandname = document.createElement("div");
-    Brandname.innerText=elem.brandName;
-    Brandname.setAttribute("class","BrandName")
-    rightBox.append(Brandname)
+    var totalCount=document.querySelector(".total-count");
+    totalCount.innerText=quant1;
 
-    var productName = document.createElement("div");
-    productName.innerHTML=elem.ProductNmae;
-    productName.setAttribute("class","proName")
+    var totalPrice=cartPage.reduce(function(acc,elem){
+            return acc+(elem.Price*elem.quant);
+    },0);
 
-    var line = document.createElement("hr")
+    var priceTotal=document.querySelector(".total-price");
+    priceTotal.innerText="$"+totalPrice;
 
+    var priceTotal2=document.querySelector(".total-price2");
+    priceTotal2.innerText="$"+totalPrice;
 
-    var price = document.createElement("div");
-    price.innerHTML= "$"+" "+elem.Price;
-    price.setAttribute("class","price")
+    function showDataInCart(cartPage){
+        cartPage.map(function(elem){
 
-    var static1 = document.createElement("div")
-    static1.setAttribute("class","para")
-    var afterPayImage = document.createElement("img");
-    afterPayImage.src = "https://static.afterpay.com/integration/product-page/logo-afterpay-colour.png"
-    var text = document.createElement("p")
-    text.innerHTML="avaliable for orders b/w $35 -$1000";
-    text.setAttribute("class","info")
+            var itemMainDiv=document.createElement("div");
+            itemMainDiv.style.display="flex";
 
-    static1.append(afterPayImage,text)
+            var firstClass=document.createElement("div");
+            firstClass.setAttribute("class","first");
+            
 
-    // var btnRow = document.createElement("div");
-    // btnRow.setAttribute("class","btnRow")
-    // var minusBtn =document.createElement("button")
-    // minusBtn.innerHTML="-";
-    // minusBtn.setAttribute("class","minusBtn")
-    // var num = document.createElement("div");
-    // num.innerHTML="1"
-    // num.setAttribute("class","num")
-    // var plusBtn =document.createElement("button")
-    // minusBtn.innerHTML="+";
-    var addbtn = document.createElement("button");
-    addbtn.innerText="ADD OT CART"
-    addbtn.setAttribute("class","addbtn")
+            
+            var itImage=document.createElement("img");
+            itImage.setAttribute("src",elem.image[0]);
+            itImage.style.height="220px";
+            itImage.style.width="300px";
 
-    addbtn.onclick = function () {
-        cartPage(elem)
-        location.href="shop.html";
-            }
+            firstClass.append(itImage);
 
-    var static2 = document.createElement("p");
-    static2.innerHTML="Free Shipping on orders over $50+30 days return"
-    static2.setAttribute("class","static2")
+            var secondClass=document.createElement("div");
+            secondClass.setAttribute("class","second");
+        
+           
 
-    var static3 = document.createElement("p");
-    static3.innerHTML="Earn 32 points in Credo Rewards";
-    static3.setAttribute("class","static3")
-    
+            var company=document.createElement("p");
+            company.innerText=elem.brandName;
 
-    var product = document.createElement("div")
-    product.innerHTML="PRODUCT DETAILS"
-    product.setAttribute("class","product")
+            var productName=document.createElement("p");
+            productName.innerText=elem.ProductNmae;
+            productName.style.fontWeight="bold";
+            productName.style.fontSize="20px";
 
-    var productName1 = document.createElement("div");
-    productName1.innerHTML=elem.ProductNmae;
-    productName1.setAttribute("class","proName1")
+            var price=document.createElement("p");
+            price.innerText="$"+" "+elem.Price;
+            price.style.fontSize="20px";
 
-    var good = document.createElement("h3")
-    good.innerHTML="This Product is -"
-    good.setAttribute("class","good")
+            secondClass.append(company,productName,price);
 
-    var goodDes = document.createElement("p")
-    goodDes.innerHTML="a black mascara in a vegan formula that lengthens lashes with conditioning ingredients."
-    goodDes.setAttribute("class","goodDes")
+            itemMainDiv.append(firstClass,secondClass);
+            var hrTag=document.createElement("hr");
+            hrTag.style.width="auto";
 
-    var type = document.createElement("h3")
-    type.innerHTML="Good for -"
-    type.setAttribute("class","type")
-
-    var typeDes = document.createElement("p");
-    typeDes.innerHTML="All types of Skin."
-    typeDes.setAttribute("class","typeDes")
-
-    // btnRow.append(minusBtn,num,plusBtn,addbtn)
-
-    rightBox.append(Brandname,productName,line,price,static1,addbtn,static2,static3,product,productName1,good,goodDes,type,typeDes)
-    
-
-    
+            document.querySelector("#itembag").append(itemMainDiv,hrTag);
 
 
 
-    // productDescription.append(Brandname,productName,price)
-    leftBox.append(imgDiv)
-    miniDiv.append(leftBox,rightBox)
-    document.querySelector("#container").append(miniDiv)
 
-    
-
-})
-
-}
-
-//changinh image function
-function currentImage(elem,image){
-    image.src=elem.image[1];
-}
-
-function currentImage2(elem,image){
-    image.src=elem.image[2];
-}
-
-function currentImage1(elem,image){
-    image.src=elem.image[0];
-}
-
-// adding products to local storage 
-function cartPage(e){
-var cartPage = JSON.parse(localStorage.getItem("cartPage"))||[];
-e.quant=1;
-
-
-cartPage.push(e);
-
-localStorage.setItem("cartPage", JSON.stringify(cartPage));
-
- window.location.href = "shop.html";
-
-}
-
-
-showdata()
+        })
+    }
 </script>

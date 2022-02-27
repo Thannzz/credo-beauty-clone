@@ -1,0 +1,266 @@
+#navcontainer{
+    width: 100%;
+    height: 50px;
+    border: 1px solid blue;
+    background-color: teal;
+    text-align: center;
+    font-family: system-ui;
+}
+#navcontainer>h3{
+    color: white;
+    margin-top: -10px;
+}
+#container_2{
+    display: flex;            
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+}
+#container_2>div{
+   
+    width: 30%;
+    height: 60px;
+    
+}
+#innerbox{
+    display: flex;
+    justify-content: space-around;
+    font-style: normal;   
+}
+h3{
+    padding-top: 20px;
+}
+#lower{
+    
+    display: flex;
+    justify-content: space-around;
+    font-weight: 10px;
+    
+}
+
+#image{
+    text-align: center;
+    padding-top: 20px;
+}
+#right{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+#right>div{
+    margin-left: 10px;
+}
+
+
+#container {
+    text-align: center;
+}
+
+
+#frist{
+    width: 100%;
+    height: 500px;
+}
+img {
+    width: 100%;
+    height: 70%;
+}
+
+.featured__heading {
+font: 100% Helvetica, sans-serif;
+display: block;
+line-height: 1.5em;
+padding: 0;
+text-align: center;
+font-family: RundText,sans-serif;
+font-weight: 400;
+font-size: 40px;
+letter-spacing: -.6px;
+color: #418993;
+}
+
+#promotions {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.tittle {
+font: 100% Helvetica, sans-serif;
+font-weight: 400;
+text-align: center;
+font-size: 14px;
+letter-spacing: 3.5px;
+margin-bottom: 30px;
+margin-top: 15px;
+color: #222222;
+}
+#home_featured {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.item_text {
+    color: rgb(51, 51, 51);
+    font: 100% Helvetica, sans-serif;
+    text-align: center;
+}
+
+.home-featured-collection_load {
+    font: 100% Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+    text-align: center;
+    color: teal;
+    text-decoration: none;
+    border: 2px solid black;
+
+}
+
+#shades{
+text-decoration: none;
+display: flex;
+width: 50%;
+}
+#cheak {
+height: 500px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-top: 150px;
+}
+#high {
+height: 500px;
+background-color:rosybrown;
+}
+
+#second {
+  width: 100px;
+}
+#logo {
+margin-top: 50px;
+height: 300px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+background-color: #f8f8f8;
+
+}
+#lower>div{
+    cursor: pointer;
+}
+#about>p {
+    font-size: 30px;
+   font-weight: 500;
+}
+.img-with-text-btn {
+font: 100% Helvetica, sans-serif;
+text-decoration: none;
+position: relative;
+touch-action: manipulation;
+font-family: Roboto;
+font-size: 20px;
+text-transform: uppercase;
+font-weight: 400;
+text-align: center;
+line-height: 1.5;
+padding: 14px 15px;
+display: inline-block;
+min-width: 199px;
+background-color: #000000;
+color: #ffffff;
+transition: .3s;
+}
+
+blockquote {
+    font-size:xx-large;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    
+}
+#instagram {
+    text-align: center;
+    margin-top: 80px;
+}
+#bottom {
+   width: 80%;
+   display: grid;
+   margin: auto;
+   grid-template-columns: repeat(5,1fr);
+   grid-template-rows: repeat(2,200px);
+   gap: 10px;
+}
+
+#foundation {
+    height: 500px;
+}
+#shop {
+    text-align: center;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+    height: 50px;
+    width: 300px;
+    background-color: #000000;
+}
+.home-banner {
+    color: #418993;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2.84px"
+}
+@media all and (min-width:150px) and (max-width:650px){
+    #frist{
+        width: 100%;
+        height: auto;
+    }
+
+    #promotions {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: (auto ,auto);
+        gap: 10px;
+    }
+
+    #home_featured {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: (auto,auto);
+        gap: 10px;
+    }
+
+    #cheak {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: (200px ,200px);
+        margin-top: 150px;
+        }
+    #logo {
+       margin-top: 600px;
+       height: 200px;
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       background-color: #f8f8f8;
+    }
+    blockquote {
+        font-size:xx-large;
+        text-align: center;
+        background-color: #f8f8f8;
+        margin-top: 350px;
+    }
+    #bottom {
+        width:100%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,200px);
+        gap: 10px;
+     }
+}

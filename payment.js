@@ -29,4 +29,3 @@ function paynow(event)
     localStorage.setItem("payment",JSON.stringify(paymentList))
     alert("Payment Successful");
 }
-

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>signup | credo</title>
     <script src="https://kit.fontawesome.com/985c64737c.js" crossorigin="anonymous"></script>
     <style>
         
@@ -347,14 +348,20 @@ height: 200px;
             date:document.querySelector("#date").value,
             email:document.querySelector("#email").value,
             password:document.querySelector("#password").value,
+            
+
         }
         signUpArr.push(obj)
         console.log(signUpArr)
         localStorage.setItem("SIGNUP",JSON.stringify(signUpArr))
-        }
         
- 
-    
+        console.log(signUpArr)
+        }
+        document.querySelector("#SIGNUP").addEventListener("click", cardo)
+      
+       function cardo (elem){
+        window.location.href="login.html";
+       }
     
 
 
