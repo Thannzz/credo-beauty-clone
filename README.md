@@ -16,3 +16,4 @@ Get clean skincare, makeup, hair care, and more with Credo.
 ![Screenshot (297)](https://user-images.githubusercontent.com/98827173/189518881-05f4433f-2a15-4ed3-a481-f42cb44e4bd7.png)
 ![Screenshot (299)](https://user-images.githubusercontent.com/98827173/189518887-c90c56ed-1023-4e1a-8d65-081f25ee1037.png)
 ![Screenshot (300)](https://user-images.githubusercontent.com/98827173/189518893-d94c0d6f-1a24-43ca-a22e-fab93469cff3.png)
+![Screenshot (302)](https://user-images.githubusercontent.com/98827173/189518950-8d25e88b-79f7-49b8-b71f-16e34f340a09.png)
