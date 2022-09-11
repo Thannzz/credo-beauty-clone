@@ -9,6 +9,6 @@ Get clean skincare, makeup, hair care, and more with Credo.
 </div>
 
 
-<h3>some glare from the website </h3>
+<h3>some view from the website </h3>
 
 # credo-beauty-clone![Screenshot (182)](https://user-images.githubusercontent.com/98827173/171566022-dba1ef8f-c900-474c-b0dd-9366036f40bf.png)
